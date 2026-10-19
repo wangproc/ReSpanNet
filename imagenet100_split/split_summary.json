@@ -1,0 +1,48 @@
+{
+  "class_count": 100,
+  "image_counts": {
+    "train": 99999,
+    "val": 20000,
+    "test": 10000
+  },
+  "image_bytes": {
+    "train": 11523076985,
+    "val": 2268913482,
+    "test": 1157260544
+  },
+  "class_index_rule": "Lexicographic directory order, as in ImageFolder",
+  "manifest_format": "dataset-root-relative POSIX path, space, integer class index",
+  "export_command": "python tools/export_imagenet100_split.py --root data/ImageNet100 --output imagenet100_split",
+  "classes_with_multiple_filename_synsets": {
+    "person": {
+      "n03450230": 444,
+      "n03535780": 260,
+      "n03617480": 136,
+      "n03787032": 81,
+      "n04479046": 92,
+      "n09835506": 73,
+      "n10148035": 86
+    }
+  },
+  "classes_with_nonstandard_filenames": {
+    "badger": 1,
+    "birdhouse": 1,
+    "fly": 1,
+    "freightcar": 1,
+    "person": 128,
+    "trimaran": 1
+  },
+  "manifest_sha256": {
+    "classes.csv": "537fc76b000da35b1a65f0ddc0c947308ec970013d2e99c808c78a3456194b98",
+    "train.txt": "6f94b0bad20ff989c8193e4a8a68ca44abda292f3ee9322dc4d01b2ef920c5a1",
+    "val.txt": "38c622f0c6f35418dcd683bd971be02860fa11514cda507d2939e97be8f83f38",
+    "test.txt": "6ae4b6b9eaab1fc464c80991a8fa6d06418ae3428391c0144ed8b63a744ec660"
+  },
+  "evaluation_partition": "val",
+  "selection_partition": "val",
+  "cross_split_filename_overlap": {
+    "train_val": 0,
+    "train_test": 0,
+    "val_test": 0
+  }
+}

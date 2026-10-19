@@ -1,0 +1,20 @@
+{
+  "common": {
+    "epochs": 100,
+    "num_classes": 100,
+    "warmup_epochs": 5,
+    "warmup_lr": 1e-06,
+    "min_lr": 1e-05,
+    "resize_epoch": 80
+  },
+  "variants": {
+    "t0": {
+      "global_batch_size": 256,
+      "lr": 0.0005,
+      "weight_decay": 0.008,
+      "mixup": 0.05,
+      "auto_augment": null,
+      "clip_grad": null
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "common": {
+    "epochs": 300,
+    "num_classes": 1000,
+    "warmup_epochs": 20,
+    "warmup_lr": 1e-06,
+    "min_lr": 1e-05,
+    "resize_epoch": 280
+  },
+  "variants": {
+    "t0": {
+      "global_batch_size": 4096,
+      "lr": 0.004,
+      "weight_decay": 0.005,
+      "mixup": 0.05,
+      "auto_augment": null,
+      "clip_grad": null,
+      "resize_epoch": 300
+    },
+    "t1": {
+      "global_batch_size": 4096,
+      "lr": 0.004,
+      "weight_decay": 0.01,
+      "mixup": 0.1,
+      "auto_augment": "rand-m3-mstd0.5-inc1",
+      "clip_grad": null
+    },
+    "t2": {
+      "global_batch_size": 2048,
+      "lr": 0.002,
+      "weight_decay": 0.02,
+      "mixup": 0.1,
+      "auto_augment": "rand-m5-mstd0.5-inc1",
+      "clip_grad": null
+    },
+    "s": {
+      "global_batch_size": 2048,
+      "lr": 0.002,
+      "weight_decay": 0.03,
+      "mixup": 0.3,
+      "auto_augment": "rand-m7-mstd0.5-inc1",
+      "clip_grad": null
+    },
+    "m": {
+      "global_batch_size": 2048,
+      "lr": 0.002,
+      "weight_decay": 0.05,
+      "mixup": 0.5,
+      "auto_augment": "rand-m7-mstd0.5-inc1",
+      "clip_grad": 1.0
+    },
+    "l": {
+      "global_batch_size": 1024,
+      "lr": 0.001,
+      "weight_decay": 0.05,
+      "mixup": 0.7,
+      "auto_augment": "rand-m7-mstd0.5-inc1",
+      "clip_grad": 0.01
+    }
+  }
+}

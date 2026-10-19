@@ -1,0 +1,6 @@
+numpy>=1.21,<1.24
+mmcv==2.0.0
+mmengine==0.7.1
+mmsegmentation==1.2.2
+ftfy==6.1.1
+opencv-python<4.9
